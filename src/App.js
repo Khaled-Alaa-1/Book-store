@@ -1,2 +1,51 @@
 import React, { useState } from 'react';
+import {
+  BrowserRouter as Router, Routes, Route, Link,
+} from 'react-router-dom';
+import BookList from './components/bookList';
+import BookForm from './components/bookform';
+import CategoriesPage from './components/categories/CategoriesPage';
 import './App.css';
+
+function App() {
+  const [books, setBooks] = useState([]);
+
+  const handleAddBook = (newBook) => {
+    setBooks([...books, newBook]);
+  };
+
+  const handleDeleteBook = (bookId) => {
+    const updatedBooks = books.filter((book) => book.id !== bookId);
+    setBooks(updatedBooks);
+  };
+
+  return (
+    <Router>
+      <div className="app">
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/categories">Categories</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route
+            path="/"
+            element={(
+              <div>
+                <h1>My Book Collection</h1>
+                <BookList books={books} onDelete={handleDeleteBook} />
+                <BookForm onAdd={handleAddBook} />
+              </div>
+          )}
+          />
+          <Route path="/categories" element={<CategoriesPage />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
