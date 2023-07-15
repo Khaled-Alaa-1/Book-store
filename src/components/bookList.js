@@ -1,3 +1,7 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import Book from './books';
+
 function BookList(props) {
   const { books, onDelete } = props;
 
@@ -20,8 +24,6 @@ function BookList(props) {
   );
 }
 
-export default BookList;
-
 BookList.propTypes = {
   books: PropTypes.arrayOf(
     PropTypes.shape({
@@ -32,3 +34,5 @@ BookList.propTypes = {
   ).isRequired,
   onDelete: PropTypes.func.isRequired,
 };
+
+export default BookList;
