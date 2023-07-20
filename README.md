@@ -24,9 +24,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 math-magicians <a name="about-project"></a>
+# 📖 Bookstore <a name="about-project"></a>
 
-This is **math-magicians** site, created with React make a a calculation of the numbers.
+This is **Bookstore** This is Bookstore site, created with React its contain store for books.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,7 +41,7 @@ This is **math-magicians** site, created with React make a a calculation of the 
 
 ### Key Features <a name="key-features"></a>
 
-- **Calculator component**
+- **Bookstore events**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,7 +65,7 @@ In order to run this project you need:
 Clone this repository to your desired folder by opening the terminal and running the following command:
 
 ```sh
- git clone `https://github.com/Khaled-Alaa-1/Math-magicians.git`
+ git clone `https://github.com/Khaled-Alaa-1/Book-store.git`
 
 ```
 
@@ -125,12 +125,6 @@ Deployed by GitHub Pages.
 - Twitter: [@Khaled86756991](https://twitter.com/Khaled86756991)
 - LinkedIn: [Khaled Alaa](https://www.linkedin.com/in/khaled-alaa-594bb9256/)
 
-👤 **Pedro Henrique Domingues Neves**
-
-- GitHub: [@PedroH-Neves](https://github.com/PedroH-Neves)
-- Twitter: [@PedroHDN710](https://twitter.com/PedroHDN710)
-- LinkedIn: [Pedro Neves](https://www.linkedin.com/in/pedro-henrique-domingues-neves-8a5878244/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -145,7 +139,7 @@ Deployed by GitHub Pages.
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, <a href="https://github.com/Khaled-Alaa-1/Math-magicians/issues">Issues </a>, and feature requests are welcome!
+Contributions, <a href="https://github.com/Khaled-Alaa-1/Book-store/issues">Issues </a>, and feature requests are welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
