@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/booksSlice';
+
 function BookForm() {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
@@ -69,6 +70,7 @@ function BookForm() {
         <button type="submit">Add Book</button>
       </form>
     </div>
-      );
-    }
-    export default BookForm;
+  );
+}
+
+export default BookForm;
