@@ -1,9 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
+  BrowserRouter as Router, Routes, Route, Link,
 } from 'react-router-dom';
 import BookList from './components/bookList';
 import BookForm from './components/bookform';
@@ -11,6 +8,18 @@ import CategoriesPage from './components/categories/CategoriesPage';
 import './App.css';
 
 function App() {
+  const [books, setBooks] = useState([]);
+
+  const handleAddBook = (newBook) => {
+    const bookWithId = { ...newBook, id: Date.now() };
+    setBooks([...books, bookWithId]);
+  };
+
+  const handleDeleteBook = (bookId) => {
+    const updatedBooks = books.filter((book) => book.id !== bookId);
+    setBooks(updatedBooks);
+  };
+
   return (
     <Router>
       <div className="app">
@@ -30,8 +39,8 @@ function App() {
             element={(
               <div>
                 <h1>My Book Collection</h1>
-                <BookList />
-                <BookForm />
+                <BookList books={books} onDelete={handleDeleteBook} />
+                <BookForm onAdd={handleAddBook} />
               </div>
           )}
           />
