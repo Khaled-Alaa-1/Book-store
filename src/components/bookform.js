@@ -27,7 +27,6 @@ function BookForm() {
     setAuthor('');
     setCategory('');
   };
-
   return (
     <div className="form-div">
       <hr />
@@ -76,5 +75,4 @@ function BookForm() {
     </div>
   );
 }
-
 export default BookForm;

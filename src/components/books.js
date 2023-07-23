@@ -7,6 +7,7 @@ function Book(props) {
   } = props;
 
   return (
+
     <div className="bookhead">
       <div className="bookInfo">
 

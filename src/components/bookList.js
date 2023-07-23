@@ -14,9 +14,9 @@ function BookList() {
   const handleDelete = (id) => {
     dispatch(removeBook(id));
   };
-
   return (
     <div className="bookAllList">
+
       {Array.isArray(books) && books.map((book) => (
         <Book
           key={book.item_id}
@@ -30,5 +30,4 @@ function BookList() {
     </div>
   );
 }
-
 export default BookList;
