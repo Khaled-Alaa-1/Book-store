@@ -28,13 +28,14 @@ function BookForm() {
     setCategory('');
   };
   return (
-    <div>
-      <h2>Add New Book</h2>
+    <div className="form-div">
+      <hr />
+      <h2>ADD NEW BOOK</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="title-input">
-            Title:
             <input
+              placeholder="Book title"
               type="text"
               id="title-input"
               value={title}
@@ -44,8 +45,8 @@ function BookForm() {
         </div>
         <div>
           <label htmlFor="author-input">
-            Author:
             <input
+              placeholder="Author"
               type="text"
               id="author-input"
               value={author}
@@ -55,7 +56,6 @@ function BookForm() {
         </div>
         <div>
           <label htmlFor="category-select">
-            Category:
             <select
               id="category-select"
               value={category}
@@ -70,7 +70,7 @@ function BookForm() {
             </select>
           </label>
         </div>
-        <button type="submit">Add Book</button>
+        <button type="submit">ADD BOOK</button>
       </form>
     </div>
   );
