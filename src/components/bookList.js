@@ -12,8 +12,7 @@ function BookList() {
   };
 
   return (
-    <div>
-      <h2>Book List</h2>
+    <div className="bookAllList">
       {books.map((book) => (
         <Book
           key={book.item_id}
