@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/booksSlice';
+
 function BookForm() {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
   const dispatch = useDispatch();
+
   const categoryOptions = [
     { id: '1', value: 'Fiction' },
     { id: '2', value: 'Action' },
     { id: '3', value: 'Nonfiction' },
     { id: '4', value: 'Comedy' },
   ];
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newBook = {

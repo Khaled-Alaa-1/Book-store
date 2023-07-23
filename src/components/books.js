@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 function Book(props) {
   const {
     title, author, category, handleDelete,
@@ -48,15 +49,19 @@ function Book(props) {
     </div>
   );
 }
+
 Book.propTypes = {
   title: PropTypes.string,
   author: PropTypes.string,
   category: PropTypes.string,
   handleDelete: PropTypes.func.isRequired,
+
 };
+
 Book.defaultProps = {
   title: '',
   author: '',
   category: '',
 };
+
 export default Book;
