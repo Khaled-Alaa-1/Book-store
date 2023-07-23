@@ -146,7 +146,7 @@ form {
 
 .bookAllList {
   display: flex;
-  padding: 4%;
+  padding: 3%;
   gap: 26px;
   flex-direction: column;
 }
